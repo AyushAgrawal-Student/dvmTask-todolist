@@ -116,7 +116,7 @@ function updateCalendar() {
     let day = now.getDay();
 
 
-    const daylist = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"];
+    const daylist = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
 
     const currentDay = daylist[day];
 
