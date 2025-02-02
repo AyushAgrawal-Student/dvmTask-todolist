@@ -1,0 +1,57 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Master</title>
+    <link id="themestyle" rel="stylesheet" href="light.css">
+    <script src="https://kit.fontawesome.com/7561b87766.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Michroma&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <div id="headbar">
+
+        <div id="spacetime">
+            <div id="time"></div>
+            <div id="formatbutton">
+                <button id="timeformat">12-hour</button>
+            </div>
+        </div>
+        
+        <div id="cal">
+            <div id="calendar">
+            </div>
+            <div id="dayname">
+            </div>
+        </div>
+        
+
+        <div id="theme">
+            <button id="themeswitch"><i class="fa-duotone fa-solid fa-moon fa-flip-horizontal"></i></button>
+        </div>
+
+    </div>
+
+    <div class="container">
+
+        <div class="taskbox">
+
+            <input id = "inputtask" type="text" placeholder="Enter task..." >
+
+            <button id="addtask">
+                <i class="fa-solid fa-plus"></i>
+            </button>
+
+        </div>
+        
+        <div class="taskcontainer"></div>
+
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

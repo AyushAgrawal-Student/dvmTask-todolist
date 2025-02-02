@@ -1,0 +1,249 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+html{
+    overflow-y: scroll;
+}
+
+body{
+    height: 100vh;
+    background: url(darkone.png) no-repeat center center/cover fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/*  */
+#headbar{
+    color: rgb(205, 205, 205);
+    font-weight: 100;
+    min-height:75px;
+    width: 100%;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    background-color: rgba(53, 53, 53, 0.669);
+    border-bottom: 3px rgb(163, 163, 163) solid;
+    text-shadow: 0 0 3px rgb(77, 77, 77);
+}
+
+/* TIME */
+#spacetime{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+}
+
+#time{
+    font-family: "Michroma", serif;
+    font-weight: 600;
+    align-self: center;
+    font-size: 1.2rem;
+    margin-bottom: 4px;
+}
+
+#formatbutton{
+    align-self: center;
+    justify-self: center;
+    border: none;
+}
+
+#timeformat{
+    font-family: "Michroma", serif;
+    font-weight: 600;
+    display: flex;
+    height: 25px;
+    justify-content: space-around;
+    margin-top: 3px;
+    font-size: 1rem;
+    color: rgb(203, 203, 203);
+    background-color: rgb(69, 69, 69);
+    border-radius: 3px;
+    border: 1px solid rgb(61, 61, 61);
+    box-shadow: 0 0 5px rgb(123, 123, 123);
+    padding: 3px;
+    margin-bottom: 3px;
+}
+
+#timeformat:hover{
+    color: rgb(61, 61, 61) ;
+    background-color: rgb(184, 184, 184);
+}
+
+/* CALENDAR */
+#cal{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#calendar{
+    font-family: "Michroma", serif;
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+
+#dayname{
+    font-family: "Michroma", serif;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+/* Theme Button */
+#themeswitch{
+    margin-right: 15px;
+    height: 30px;
+    width: 30px;
+    font-size: 1.5rem;
+}
+/* Main Container */
+
+.container{
+    width: 100vw;
+    margin-top: 25vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+/* Task Adding Box */
+
+.taskbox{
+    min-height: 30px;
+    min-width: 350px;
+    max-width: 550px;
+    width: 85%;
+    padding: 10px;
+    border: 3px black solid;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(48, 48, 48, 0.765);
+    box-shadow: 0 0 5px rgb(100, 100, 100);
+    margin-bottom: 12px;
+    display: flex;
+}
+
+#inputtask{
+    color: white;
+    transition: ease-in-out;
+    transition: 0.3s;
+    min-height: 40px;
+    height: 5vh;
+    flex-grow: 1;
+    font-size: 1.2rem;
+    margin: 5px;
+    padding: 5px;
+    background-color: rgb(83, 83, 83);
+    border: 3px rgb(198, 198, 198) solid;
+    border-radius: 7px;
+    box-shadow: 0 0 4px rgba(192, 192, 192, 0.728);
+}
+#inputtask::placeholder{
+    color: rgb(208, 208, 208);
+    transition: 0.1s;
+}
+#inputtask.placered::placeholder{
+    color: red;
+    font-size: larger;
+}
+
+/* Add Task Button */
+
+#addtask{
+    background-color: rgb(211, 211, 211);
+    border: 3px rgb(172, 172, 172) solid;
+    min-height: 30px;
+    height: 5vh;
+    min-width: 30px;
+    width: 5vh;
+    border-radius: 5px;
+    align-self: center;
+    justify-self: center;
+    margin: 5px;
+}
+
+#addtask:hover{
+    background-color: rgb(216, 216, 216);
+}
+
+
+/* Individual Tasks Holding Box */
+
+.taskcontainer{
+    max-width: 400px;
+    width: 85vw;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Particular Task Box */
+
+.task{
+    width: 100%;
+    display: flex;
+    padding: 4px;
+    border: 3px black solid;
+    border-radius: 10px;
+    align-items: center;
+    background-color: rgba(37, 37, 37, 0.826);
+    box-shadow: 0 0 5px rgb(255, 255, 255);
+    margin-bottom: 2px;
+    word-wrap: break-word; /* Breaks long words */
+}
+
+/* Text in the Task Box */
+
+li {
+    
+    list-style-type: none;
+    color: rgb(205, 205, 205);
+    font-size: 1.2rem;
+    width: 95%;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 3px;
+    align-self: center;
+    justify-self: center;
+    line-height: 1.5;
+
+    display: flex;
+    flex-wrap: wrap;
+    word-break: break-all;
+}
+
+
+.checkbutton{
+    border: 3px black solid;
+    min-height: 35px;
+    min-width: 35px;
+    margin: 3px;
+    border-radius: 3px;
+}
+
+.deletebutton{
+    transition: 0.5s;
+    color: rgb(0, 0, 0);
+    border: 3px black solid;
+    min-height: 35px;
+    min-width: 35px;
+    margin: 3px;
+    border-radius: 3px;
+}
+
+.deletebutton:hover{
+    background-color: red;
+    color: white;
+}
